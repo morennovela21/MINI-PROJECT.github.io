@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PENIKULA</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="https://kit.fontawesome.com/4e948b40f1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h1 class="logo">Penikula</h1>
+                </div>
+                <!-- FOR NAVIGATION BAR -->
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active">Home</li>
+                        <li class="menu-list-item">Register</li>
+                        <li class="menu-list-item">Sign in</li>
+                    </ul>
+                </div>
+                <!-- FOR SEARCH BAR -->
+                <form id="form">
+                    <input
+                        type="text"
+                        placeholder="Search"
+                        id="search"
+                        class="search"
+                    >
+                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                </form>
+                <!-- FOR LANGUAGE BAR -->
+                <div class="profile-container">
+                    <div class="profile-text-container">
+                        <span class="profile-text">English</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="toggle">
+                        <i class="fas fa-moon toggle-icon"></i>
+                        <i class="fas fa-sun toggle-icon"></i>
+                        <div class="toggle-ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+             <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151415), url();" >
+            
+                <p class="featured-desc">
+                    Unlimited movies, TV shows, and more. Watch anywe. Enjoy anytime.
+                     Enjoy on your TV. Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                </p>
+                <button class="watch-btn">
+                    <i class="fa-solid fa-play"></i>
+                    Watch Now
+                </button>
+            </div>
+          </div>
+            <div id="tags"></div>
+            <div id="myNav" class="overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                </a
+      >
+                <!-- Overlay content -->
+                <div class="overlay-content" id="overlay-content"></div>
+                <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">
+                    <i class="fas fa-arrow-left">
+                    </i
+      >
+                </a>
+                <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">
+                    <i class="fas fa-arrow-right">
+                    </i
+      >
+                </a>
+            </div>
+            <main id="main"></main>
+            <script src="./scripts.js"></script>
+        </body>
+    </html>
