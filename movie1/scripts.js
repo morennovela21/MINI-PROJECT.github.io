@@ -98,7 +98,7 @@ var currentPage = 1;
 var nextPage = 2;
 var prevPage = 3;
 var lastUrl = "";
-var totalPages = 100;
+var totalPages = 20;
 
 // Get Movie Genres
 
@@ -394,7 +394,7 @@ function pageCall(page) {
     getMovies(url);
   }
 }
-//TOGGLE
+// TOGGLE
 
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(

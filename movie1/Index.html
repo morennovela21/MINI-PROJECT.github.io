@@ -11,36 +11,65 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:ital@1&display=swap');
+            </style>
         <script src="https://kit.fontawesome.com/4e948b40f1.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
+        <!-- START OF NAVBAR -->
         <div class="navbar">
             <div class="navbar-container">
                 <div class="logo-container">
                     <h1 class="logo">Penikula</h1>
                 </div>
+                <!-- FOR DROPDOWN CATEGORIES -->
+                <div class="dropdown">
+
+                    <button onclick="myFunction()" 
+                    class="dropbtn">Categories 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+
+                    <div class="dropdown-content">
+                       <div id="tags"></di> 
+                    </div>
+                        
+                </div>
+            </div>
+
                 <!-- FOR NAVIGATION BAR -->
                 <div class="menu-container">
                     <ul class="menu-list">
+<<<<<<< Updated upstream
                         <li class="menu-list-item active">Register</li>
                         <li class="menu-list-item">Sign in</li>
+=======
+                        <li class="menu-list-item active"><a href="#register">Register</a></li>
+                        <li class="menu-list-item"><a href="#signin">Sign in</a></li>
+>>>>>>> Stashed changes
                     </ul>
                 </div>
+                
                 <!-- FOR SEARCH BAR -->
                 <form id="form">
+                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
                     <input
                         type="text"
                         placeholder="Search"
                         id="search"
                         class="search"
                     >
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
                 </form>
                 <!-- FOR LANGUAGE BAR -->
                 <div class="profile-container">
                     <div class="profile-text-container">
+                        <a href="#english">
                         <span class="profile-text">English</span>
                         <i class="fas fa-caret-down"></i>
+                        </a>
                     </div>
                     <div class="toggle">
                         <i class="fas fa-moon toggle-icon"></i>
@@ -50,8 +79,11 @@
                 </div>
             </div>
         </div>
+        <!-- END OF NAVBAR -->
+
         <div class="content-container">
-             <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151415), url();" >
+           
+             <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151415), url(https://img.etimg.com/photo/msid-96576274/jung_e.jpg);" >
             
                 <p class="featured-desc">
                     Unlimited movies, TV shows, and more. Watch anywe. Enjoy anytime.
@@ -63,7 +95,8 @@
                 </button>
             </div>
           </div>
-            <div id="tags"></div>
+
+         
             <div id="myNav" class="overlay">
                 <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
@@ -83,6 +116,14 @@
                 </a>
             </div>
             <main id="main"></main>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+                </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             <script src="./scripts.js"></script>
         </body>
     </html>
