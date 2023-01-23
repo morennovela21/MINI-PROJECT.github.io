@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+.btn {
+  background-color: crimson;
+  border: white;
+  border-radius: 5px;
+}
+.modal-body {
+  margin: auto;
+  max-width: 350px;
+  pad: 10px;
+}
+input[type="text"] {
+  display: inline-block;
+  width: 100%;
+  padding: 3px;
+  border-radius: 4px;
+  border: 0.5px solid;
+  margin: 5px 0;
+}
+input[type="password"] {
+  display: inline-block;
+  width: 100%;
+  padding: 3px;
+  border-radius: 4px;
+  border: 0.5px solid;
+  margin: 5px 0;
+}
+.modal-header {
+  background-color: crimson;
+}
