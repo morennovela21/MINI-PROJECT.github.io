@@ -32,7 +32,7 @@ body {
   padding: 0 50px;
   height: 100%;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rancho', cursive;
 }
 .dropdown {
   font-family: 'Roboto', sans-serif;
@@ -338,7 +338,7 @@ i fas fa-play {
 
 .search::placeholder {
   color: white;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .search:focus {
@@ -351,7 +351,6 @@ i fas fa-play {
 }
 .search-icon:hover{
   color: red;
-
 }
 main {
   display: flex;
@@ -378,11 +377,9 @@ main {
   margin: 0 30px;
   opacity: 0.5;
 }
-
 .movie img {
   width: 100%;
 }
-
 .movie-info {
   color: #eee;
   display: flex;
@@ -391,30 +388,24 @@ main {
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
 }
-
 .movie-info h3 {
   margin-top: 0;
 }
-
 .movie-info span {
   background-color: var(--primary-color);
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-weight: bold;
 }
-
 .movie-info span.green {
   color: lightgreen;
 }
-
 .movie-info span.orange {
   color: red;
 }
-
 .movie-info span.red {
   color: red;
 }
-
 .overview {
   position: absolute;
   left: 0;
@@ -429,7 +420,6 @@ main {
   user-select: none;
   transition: 1s all ease-in-out
 }
-
 .overview h3 {
   color: blue;
   cursor: pointer;
@@ -437,12 +427,10 @@ main {
   font-weight: bold;
   transition: 1s all ease-in-out
 }
-
 .movie:hover .overview {
   transform: translateY(0)
   
 }
-
 #tags {
   width: 80%;
   display: flex;
@@ -453,7 +441,6 @@ main {
   user-select: none;
   
 }
-
 .tag {
   color: white;
   padding: 10px 20px;
@@ -463,7 +450,6 @@ main {
   display: inline-block;
   cursor: pointer;
 }
-
 .tag.highlight {
   background-color: red;
 }
@@ -525,14 +511,14 @@ h1 .searchItem {
 .current {
   padding: 10px 20px;
   border-radius: 50%;
-  border: 5px solid orange;
+  border: 5px solid #FFA500;
   font-size: 20px;
   font-weight: 600;
   user-select: none;
 }
 
 .know-more {
-  background-color: orange;
+  background-color: #FFA500;
   color: white;
   font-size: 16px;
   font-weight: bold;
