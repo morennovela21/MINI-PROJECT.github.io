@@ -12,6 +12,7 @@ const logIn = document.querySelector("#logIn");
 const mataMata = document.querySelector("#mataMata");
 const mata = document.querySelector("#mata");
 const eye = document.querySelector("#eye");
+const reg = document.querySelector("#reg");
 
 const usernameError = document.querySelector("#usernameError");
 const emailError = document.querySelector("#emailError");
@@ -162,4 +163,9 @@ eye.addEventListener("click", () => {
     confirmPassword.setAttribute("type", "text");
     eye.className = "bi bi-eye";
   }
+});
+reg.addEventListener("click", (e) => {
+  e.preventDefault();
+  reg.setAttribute("data-bs-toggle", "modal");
+  reg.setAttribute("data-bs-target", "#staticBackdrop");
 });
