@@ -408,22 +408,3 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
 });
 
-// Search Bar
-
-// const form = document.getElementById('form');
-// const search = document.getElementById('search')
-
-
-/* form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const searhTerm = search.value;
-
-  if(searhTerm) {
-      getMovies(searchURL+'&query='+searhTerm)
-  }else{
-      getMovies(API_URL);
-  }
-
-
-} ) */

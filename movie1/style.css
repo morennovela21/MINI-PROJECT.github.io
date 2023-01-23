@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-
 * {
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: #030a46;
   background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 .navbar {
   width: 100%;
@@ -19,9 +19,9 @@ body {
   background-color: black;
   position: sticky;
   top: 0;
-  overflow: hidden;
+  
 }
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: white;
 }
@@ -32,11 +32,14 @@ body {
   padding: 0 50px;
   height: 100%;
   color: white;
-  font-family: "Sen", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .dropdown {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   float: left;
   overflow: hidden;
+
 }
 
 .dropdown .dropbtn {
@@ -46,7 +49,7 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -56,13 +59,12 @@ body {
 }
 
 .dropdown-content {
-  min-height: 70vh;
-  min-width: 100%;
+  min-height: 20vh;
+  min-width: 40%;
   border-radius: 3px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
- 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -72,7 +74,7 @@ body {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: left;
 }
 
@@ -83,21 +85,28 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.dropbtn{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.watch-btn a {
+  text-decoration: none;
+  color: #FF0000;
+}
 
 .logo-container {
-  flex: 1;
+  flex: 2;
 }
 
 .logo {
-  font-family: 'Kalam', cursive;
-font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-family: 'Rancho', cursive;
+  font-size: 50px;
   color: #FF0000;
   cursor: pointer;
 }
 
 .menu-container {
-  flex: 6;
+  flex: 7;
 }
 
 .menu-list {
@@ -117,6 +126,7 @@ font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   padding: 14px 16px;
 }
+
 .profile-container {
   flex: 2;
   display: flex;
@@ -128,13 +138,20 @@ font-family: 'Open Sans', sans-serif;
 .profile-text-container {
   margin: 0 20px;
 }
+.google_translate_element select{
+  background: #F6EDFD;
+  color: #383ffa;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
 
 .content-container {
   margin-left: 50px;
 }
 
 .featured-content {
-  height: 70vh;
+  height: 90vh;
   padding: 50px;
   background-size: cover;
   color: var(--white);
@@ -160,7 +177,7 @@ font-family: 'Open Sans', sans-serif;
   background-color: #FF0000;
   color: white;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   outline: none;
   font-weight: bold;
@@ -250,7 +267,7 @@ font-family: 'Open Sans', sans-serif;
     right: 0;
     z-index: 1;
     display: block;
-    background-image: url(/assets/bg.jpg);
+    background-image: url();
   background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,16 +300,16 @@ header {
 }
 
 form {
-  border: 2px solid white;
-  background-color: transparent;
-    border-radius: 50px;
+  border: 1px solid white;
+  background-color: black;
+    border-radius: 40px;
     font-family: inherit;
     font-size: 15px;
     padding: 0.5rem 1rem;
     color: #fff;
     user-select: none;
     outline: none;
-    height: 50px;
+    height: 40px;
     margin: 10px;
 }
 
@@ -351,7 +368,16 @@ main {
   position: relative;
   overflow: hidden;
 }
-
+.tags {
+  
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+.tags:hover {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
 
 .movie img {
   width: 100%;
@@ -401,17 +427,20 @@ main {
   transition: transform 0.3s ease-in;
   cursor: pointer;
   user-select: none;
+  transition: 1s all ease-in-out
 }
 
 .overview h3 {
-  color: #6368a3;
+  color: blue;
   cursor: pointer;
   text-align: center;
   font-weight: bold;
+  transition: 1s all ease-in-out
 }
 
 .movie:hover .overview {
   transform: translateY(0)
+  
 }
 
 #tags {
@@ -422,6 +451,7 @@ main {
   align-items: center;
   margin: 10px auto;
   user-select: none;
+  
 }
 
 .tag {
@@ -474,7 +504,7 @@ h1 .searchItem {
 }
 
 .pagination {
-  display: flex;
+  display: inline-block;
   margin: 10px 30px;
   align-items: center;
   justify-content: center;
@@ -518,7 +548,7 @@ h1 .searchItem {
 
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  /* Height & width depends on how you want to reveal the overlay */
   height: 100%;
   width: 0;
   position: fixed;
@@ -535,7 +565,7 @@ h1 .searchItem {
   /* Disable horizontal scroll */
   transition: 0.5s;
   user-select: none;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  /* 0.5 second transition effect to slide in or slide down the overlay  */
 }
 
 /* Position the content inside the overlay */
@@ -560,7 +590,6 @@ h1 .searchItem {
   color: #818181;
   display: block;
   /* Display block instead of inline */
-  transition: 0.3s;
   user-select: none;
   /* Transition effects on hover (color) */
 }
@@ -625,9 +654,70 @@ h1 .searchItem {
 .dots .dot.active {
   border-color: orange;
 }
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-width: 700px) {
   .navbar .nar-btn .content-container .profile-container .form{
     display: inline-block;

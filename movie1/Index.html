@@ -8,15 +8,16 @@
         <title>PENIKULA</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:ital@1&display=swap');
-            </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4e948b40f1.js" crossorigin="anonymous"></script>
-
     </head>
     <body>
         <!-- START OF NAVBAR -->
@@ -27,103 +28,90 @@
                 </div>
                 <!-- FOR DROPDOWN CATEGORIES -->
                 <div class="dropdown">
-
-                    <button onclick="myFunction()" 
-                    class="dropbtn">Categories 
-                      <i class="fa fa-caret-down"></i>
+                    <button onclick="myFunction()" class="dropbtn">
+                        Categories
+                        <i class="fa fa-caret-down"></i>
                     </button>
-
                     <div class="dropdown-content">
-                       <div id="tags"></di> 
+                        <div id="tags">
+                        </di>
                     </div>
-                        
                 </div>
             </div>
-
-                <!-- FOR NAVIGATION BAR -->
-                <div class="menu-container">
-                    <ul class="menu-list">
-<<<<<<< Updated upstream
-                        <li class="menu-list-item active">Register</li>
-                        <li class="menu-list-item">Sign in</li>
-=======
-                        <li class="menu-list-item active"><a href="#register">Register</a></li>
-                        <li class="menu-list-item"><a href="#signin">Sign in</a></li>
->>>>>>> Stashed changes
-                    </ul>
+            <!-- FOR NAVIGATION BAR -->
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">
+                        <a href="#register">Register</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#signin">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- FOR SEARCH BAR -->
+            <form id="form">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    placeholder="Search"
+                    id="search"
+                    class="search"
+                >
+            </form>
+            <!-- FOR LANGUAGE BAR -->
+            <div class="profile-container">
+                <div class="profile-text-container">
+                    <div class="profile-text" id="google_translate_element"></div>
                 </div>
-                
-                <!-- FOR SEARCH BAR -->
-                <form id="form">
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
-                    <input
-                        type="text"
-                        placeholder="Search"
-                        id="search"
-                        class="search"
-                    >
-                </form>
-                <!-- FOR LANGUAGE BAR -->
-                <div class="profile-container">
-                    <div class="profile-text-container">
-                        <a href="#english">
-                        <span class="profile-text">English</span>
-                        <i class="fas fa-caret-down"></i>
-                        </a>
-                    </div>
-                    <div class="toggle">
-                        <i class="fas fa-moon toggle-icon"></i>
-                        <i class="fas fa-sun toggle-icon"></i>
-                        <div class="toggle-ball"></div>
-                    </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
                 </div>
             </div>
         </div>
-        <!-- END OF NAVBAR -->
-
-        <div class="content-container">
-           
-             <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151415), url(https://img.etimg.com/photo/msid-96576274/jung_e.jpg);" >
-            
-                <p class="featured-desc">
-                    Unlimited movies, TV shows, and more. Watch anywe. Enjoy anytime.
+    </div>
+    <!-- END OF NAVBAR -->
+    <div class="content-container">
+        <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151415), url(https://img.etimg.com/photo/msid-96576274/jung_e.jpg);">
+            <p class="featured-desc">
+                Unlimited movies, TV shows, and more. Watch anywe. Enjoy anytime.
                      Enjoy on your TV. Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
-                </p>
-                <button class="watch-btn">
-                    <i class="fa-solid fa-play"></i>
-                    Watch Now
-                </button>
-            </div>
-          </div>
-
-         
-            <div id="myNav" class="overlay">
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
-                </a
+            </p>
+            <button class="watch-btn">
+                <a href="#watchnow">Watch Now</a>
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </div>
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;
+        </a
       >
-                <!-- Overlay content -->
-                <div class="overlay-content" id="overlay-content"></div>
-                <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">
-                    <i class="fas fa-arrow-left">
-                    </i
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">
+            <i class="fas fa-arrow-left">
+            </i
       >
-                </a>
-                <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">
-                    <i class="fas fa-arrow-right">
-                    </i
+        </a>
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">
+            <i class="fas fa-arrow-right">
+            </i
       >
-                </a>
-            </div>
-            <main id="main"></main>
-
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                }
-                </script>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <script src="./scripts.js"></script>
-        </body>
-    </html>
+        </a>
+    </div>
+    <main id="main"></main>
+    <!-- GOOGLE TRANSLATE -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en' }, 'google_translate_element');}
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./scripts.js"></script>
+    <script src="./video.js"></script>
+</body>
+</html>
