@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PENIKULA</title>
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -24,7 +23,8 @@
         <div class="navbar">
             <div class="navbar-container">
                 <div class="logo-container">
-                    <h1 class="logo">Penikula</h1>
+                    <a href="#home">
+                    <h1 class="logo">Penikula</h1></a>
                 </div>
                 <!-- FOR DROPDOWN CATEGORIES -->
                 <div class="dropdown">
@@ -43,7 +43,6 @@
                 <ul class="menu-list">
                     <li class="menu-list-item active">
                         <a href="./modal.html">Register</a>
-                        
                     </li>
                     <li class="menu-list-item">
                         <a href="./modal.html">Sign in</a>
@@ -55,16 +54,16 @@
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
                 <input
                     type="text"
-                    placeholder="Search Movie Title..."
+                    placeholder="Find movies and more..."
                     id="search"
                     class="search"
                 >
             </form>
             <!-- FOR LANGUAGE BAR -->
-            <div class="profile-container">
-                <div class="profile-text-container">
+            <div class="google-container">
+                <button class="google-translate">
                     <div class="profile-text" id="google_translate_element"></div>
-                </div>
+                </button>
                
             </div>
         </div>
