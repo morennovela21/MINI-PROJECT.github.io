@@ -119,11 +119,11 @@ signIn.addEventListener("submit", (e) => {
   if (username.error != null || password.error != null) return;
 
   if (username.value == "admin" && password.value == "admin123") {
-    alert("Login successfully");
+    alert("Logged in successfully");
     // window.location.href = "home.html";
     // return false;
   } else {
-    alert("You have put an incorrect username/password!");
+    alert("You have entered an incorrect username/password!");
     // return false;
   }
 });
@@ -164,8 +164,19 @@ eye.addEventListener("click", () => {
     eye.className = "bi bi-eye";
   }
 });
+
 reg.addEventListener("click", (e) => {
   e.preventDefault();
-  reg.setAttribute("data-bs-toggle", "modal");
+  const username = validateUsername("username");
+  const password = validatePassword("password");
+  const email = validateEmail("email");
+  const confirmPassword = validatePassword("confirmPassword");
+  if (
+    username.error != null ||
+    password.error != null ||
+    email.error != null ||
+    confirmPassword.error != null
+  )
+    reg.setAttribute("data-bs-toggle", "modal");
   reg.setAttribute("data-bs-target", "#staticBackdrop");
 });
