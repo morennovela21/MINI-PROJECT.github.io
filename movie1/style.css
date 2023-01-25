@@ -1,11 +1,9 @@
 * {
-  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
 body {
   width: 100vw;
-  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   background-color: #030a46;
   background-position: cover;
@@ -34,7 +32,7 @@ body {
   align-items: center;
   height: 100%;
   color: white;
-  font-family: 'Rancho', cursive;
+  font-family: 'Roboto', sans-serif;
   position: sticky;
 }
 
@@ -42,7 +40,6 @@ body {
 /* START FOR DROPDOWN*/
 .dropdown {
   font-family: 'Roboto', sans-serif;
-  font-size: 600;
   float: left;
   position: relative;
   padding: 0 20px;
@@ -58,7 +55,7 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.menu-list-item:hover {
   background-color: red;
   padding: 15px;
   border-radius: 15px;
@@ -94,7 +91,6 @@ body {
 
 /* FOR LOGO */
 #h1 {
-  position: sticky !important;
   padding: 10px;
   height: 80px;
   display: flex;
@@ -106,9 +102,11 @@ body {
   width: 150px;
   height: 50px;
   margin: 10px;
+  padding-left: 30px;
 }
 .logo-container {
   flex: 2;
+  padding: 10px 10px 10px 0;
 }
 
 .logo {
@@ -166,6 +164,12 @@ body {
   border-radius: 10px;
   padding: 6px 8px;
 }
+.google_translate_element{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* FOR CONTENT-CONTAINER*/
 .content-container {
   background: black;
@@ -276,18 +280,17 @@ body {
 
 /* FOR FORM */
 form {
-  
-  border: 0.5px solid white;
   background-color: black;
-    border-radius: 40px;
-    font-family: inherit;
-    font-size: 15px;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    user-select: none;
-    outline: none;
-    height: 40px;
-    margin: 10px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  user-select: none;
+  outline: none;
+  height: 40px;
+  margin: 10px;
 }
 
 fas fa{
