@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>HuYu | Stream TV and Movies Live and Online</title>
   </head>
   <body>
@@ -14,7 +17,7 @@
         <ul>
           <li>
             <button class="login-btn">Sign In</button>
-          </li>         
+          </li>
         </ul>
       </nav>
 
@@ -173,55 +176,72 @@
       <div class="modal-box">
         <div class="modal-body">
           <h3>Sign In</h3>
-          <form>
+          <form id="logIn">
             <div class="form-control">
               <label for="email">Email</label>
-              <input type="email" id="email" />
+              <input type="text" id="emailSignIn" /><br />
+              <small id="emailSignInError"></small>
             </div>
             <div class="form-control">
               <label for="password">Password</label>
-              <input type="password" id="passwordSign" />
-              <span><i class="fa fa-eye" id="eye_sign"></i></span>
+              <input type="password" id="passwordSignIn" />
+              <span><i class="fa fa-eye" id="eye_sign"></i></span> <br />
+              <small id="passwordSignInError"></small>
             </div>
             <p><a href="#">Forgot your email or password</a></p>
-            <button class="btn btn-dark">SIGN IN</button>
+            <button
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              SIGN IN
+            </button>
           </form>
         </div>
         <div class="modal-footer">
-          <p>Don't have an account? <a href="#" class="a_register">Register</a></p>
+          <p>
+            Don't have an account?
+            <a href="#" class="a_register">Register</a>
+          </p>
         </div>
         <img class="close" src="img/close.svg" alt="close" />
       </div>
     </div>
 
     <div class="modal_register" id="register">
-        <div class="modal_register-box">
-          <div class="modal_register-body">
-            <h3>Register</h3>
-            <form>
-              <div class="form-control">
-                <label for="email">Username</label>
-                <input type="email" id="email" />
-              </div>
-              <div class="form-control">
-                <label for="password">Password</label>
-                <input type="password" id="password" />
-                <span><i class="fa fa-eye" id="eye_pass"></i></span>
-              </div>
-              <div class="form-control">
-                <label for="password">Confirm Password</label>
-                <input type="password" id="passwordConReg" />
-                <span><i class="fa fa-eye" id="eye_cpass"></i></span>
-              </div>
-              <button class="btn btn-dark">REGISTER</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <p>Already have an account? <a href="#" class="a_signIn">Sign In</a></p>
-          </div>
-          <img class="close_register" src="img/close.svg" alt="close" />
+      <div class="modal_register-box">
+        <div class="modal_register-body">
+          <h3>Register</h3>
+          <form id="register">
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="emailReg" /> <br />
+              <small id="emailRegError"></small>
+            </div>
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" id="passwordReg" />
+              <span><i class="fa fa-eye" id="eye_pass"></i></span> <br />
+              <small id="passwordRegError"></small>
+            </div>
+            <div class="form-control">
+              <label for="password">Confirm Password</label>
+              <input type="password" id="confirmRegPassword" /> <br />
+              <span><i class="fa fa-eye" id="eye_cpass"></i></span>
+              <small id="confirmPasswordRegError"></small>
+            </div>
+            <button class="btn btn-dark" id="reg">REGISTER</button>
+          </form>
         </div>
+        <div class="modal-footer">
+          <p>
+            Already have an account?
+            <a href="#" class="a_signIn" id="signInLink">Sign In</a>
+          </p>
+        </div>
+        <img class="close_register" src="img/close.svg" alt="close" />
       </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
