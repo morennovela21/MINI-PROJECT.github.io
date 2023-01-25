@@ -39,7 +39,7 @@ body {
 /* START FOR DROPDOWN*/
 .dropdown {
   font-family: 'Roboto', sans-serif;
-  float: left;
+  z-index: auto;
   position: relative;
   padding: 0 20px;
 }
@@ -64,8 +64,8 @@ body {
   min-width: 100%;
   display: none;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  float: none;
+  z-index: 2;
+  
 }
 
 .dropdown-content:hover {
@@ -176,8 +176,7 @@ body {
 .featured-content {
   height: 90vh;
   padding: 50px;
-  background-size: cover;
-  
+  background-repeat: no-repeat;
   color: var(--white);
   display: flex;
   flex-direction: column;
