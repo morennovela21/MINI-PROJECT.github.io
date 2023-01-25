@@ -198,7 +198,7 @@ function getMovies(url) {
 
         tagsEl.scrollIntoView({ behavior: "smooth" });
       } else {
-        main.innerHTML = `<div class="no-results">
+        main.innerText = `<div class="no-results">
         <h1>The <span class="searchItem">${search.value}</span> You have Searched</h1>
         <h2>No Results Found</h2>
         <img class="sad-face" src="/assets/sad-face.svg" alt="Error" />

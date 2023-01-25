@@ -1,11 +1,10 @@
 * {
-  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+  width: 100vw;
+  margin: 0 auto;
   background-color: #030a46;
   background-position: cover;
   background-repeat: no-repeat;
@@ -19,7 +18,7 @@ body {
   background-color: black;
   position: sticky;
   top: 0;
-  padding-left: 30px;
+  
   
 }
 .navbar a {
@@ -32,7 +31,7 @@ body {
   align-items: center;
   height: 100%;
   color: white;
-  font-family: 'Rancho', cursive;
+  font-family: 'Roboto', sans-serif;
   position: sticky;
 }
 
@@ -52,28 +51,25 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  /* background-color: red; */
+  background-color: red;
  
 }
 
 .dropdown-content {
-  min-height: 30vh;
-  min-width: 40%;
+  min-height: 40vh;
+  min-width: 100%;
   display: none;
-  position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   float: none;
-  position: absolute ;
 }
 
 .dropdown-content:hover {
-  background-color: #ddd;
+  background-color: transparent;
 }
 
 .dropdown:hover .dropdown-content {
@@ -87,15 +83,11 @@ body {
   display: block;
 }
 
-.watch-btn a {
-  text-decoration: none;
-  color: #FF0000;
-}
+
 /* END FOR DROPDOWN*/
 
 /* FOR LOGO */
 #h1 {
-  position: sticky !important;
   padding: 10px;
   height: 80px;
   display: flex;
@@ -107,9 +99,11 @@ body {
   width: 150px;
   height: 50px;
   margin: 10px;
+  padding-left: 30px;
 }
 .logo-container {
   flex: 2;
+  padding: 10px 10px 10px 0;
 }
 
 .logo {
@@ -151,7 +145,7 @@ body {
   flex: 4;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  
   
 }
 /* FOR GOOGLE TRANSLATE */
@@ -167,15 +161,23 @@ body {
   border-radius: 10px;
   padding: 6px 8px;
 }
+.google_translate_element{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* FOR CONTENT-CONTAINER*/
 .content-container {
-  margin-left: 50px;
+  background: black;
+  padding-bottom: 20px;
 }
 /* FOR FEATURE MOVIE */
 .featured-content {
   height: 90vh;
   padding: 50px;
   background-size: cover;
+  
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -190,9 +192,9 @@ body {
   width: 500px;
   color: lightgray;
   margin: 30px 0;
-  color: red;
-  font-size: 20px;
-  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .featured-button {
@@ -213,20 +215,23 @@ body {
 .watch-btn{
   width: 150px;
   height: 35px;
-  border-radius: 18px;
-  border: 1px solid black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  background: blue;
+  border-radius: 15px;
+  border: 0.5px solid white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background: white;
   color: white;
-  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.watch-btn a {
+  text-decoration: none;
+  color: red;
+}
 
 .watch-btn:hover{
- background-color: white;
+ background-color: blue;
  color: red;
 }
 
@@ -272,18 +277,17 @@ body {
 
 /* FOR FORM */
 form {
-  
-  border: 0.5px solid white;
   background-color: black;
-    border-radius: 40px;
-    font-family: inherit;
-    font-size: 15px;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    user-select: none;
-    outline: none;
-    height: 40px;
-    margin: 10px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  user-select: none;
+  outline: none;
+  height: 40px;
+  margin: 10px;
 }
 
 fas fa{
@@ -340,7 +344,6 @@ main {
   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
-  
   position: relative;
   overflow: hidden;
 }
@@ -398,7 +401,7 @@ main {
   transition: 1s all ease-in-out
 }
 .overview h3 {
-  color: blue;
+  color: #00008B;
   cursor: pointer;
   text-align: center;
   font-weight: bold;
@@ -421,7 +424,7 @@ main {
 .tag {
   color: white;
   padding: 10px 20px;
-  background-color: red;
+  background-color: #8B0000;
   border-radius: 25px;
   margin: 5px;
   display: inline-block;
@@ -495,7 +498,7 @@ h1 .searchItem {
 }
 
 .know-more {
-  background-color: #FFA500;
+  background-color: #8B0000;
   color: white;
   font-size: 16px;
   font-weight: bold;
