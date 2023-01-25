@@ -198,7 +198,7 @@ function getMovies(url) {
 
         tagsEl.scrollIntoView({ behavior: "smooth" });
       } else {
-        main.innerHTML = `<div class="no-results">
+        main.innerText = `<div class="no-results">
         <h1>The <span class="searchItem">${search.value}</span> You have Searched</h1>
         <h2>No Results Found</h2>
         <img class="sad-face" src="/assets/sad-face.svg" alt="Error" />
@@ -208,13 +208,13 @@ function getMovies(url) {
 }
 // Show Movies Images & Info
 function showMovies(data) {
-  main.innerHTML = "";
+  main.innerText = "";
 
   data.forEach((movie) => {
     const { title, poster_path, vote_average, overview, id } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
-    movieEl.innerHTML = `
+    movieEl.innerText = `
              <img src="${
                poster_path ? IMG_URL + poster_path : "/assets/cinema.jpg"
              }" alt="${title}">

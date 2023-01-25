@@ -88,10 +88,7 @@ body {
   display: block;
 }
 
-.watch-btn a {
-  text-decoration: none;
-  color: #FF0000;
-}
+
 /* END FOR DROPDOWN*/
 
 /* FOR LOGO */
@@ -170,13 +167,15 @@ body {
 }
 /* FOR CONTENT-CONTAINER*/
 .content-container {
-  margin-left: 50px;
+  background: black;
+  padding-bottom: 20px;
 }
 /* FOR FEATURE MOVIE */
 .featured-content {
   height: 90vh;
   padding: 50px;
   background-size: cover;
+  
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -191,9 +190,9 @@ body {
   width: 500px;
   color: lightgray;
   margin: 30px 0;
-  color: red;
-  font-size: 20px;
-  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .featured-button {
@@ -214,20 +213,23 @@ body {
 .watch-btn{
   width: 150px;
   height: 35px;
-  border-radius: 18px;
-  border: 1px solid black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  background: blue;
+  border-radius: 15px;
+  border: 0.5px solid white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background: white;
   color: white;
-  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.watch-btn a {
+  text-decoration: none;
+  color: red;
+}
 
 .watch-btn:hover{
- background-color: white;
+ background-color: blue;
  color: red;
 }
 
