@@ -9,7 +9,6 @@ body {
   background-color: #030a46;
   background-position: cover;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
   
 }
@@ -58,7 +57,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  /* background-color: red; */
  
 }
 
