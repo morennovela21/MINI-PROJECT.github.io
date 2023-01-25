@@ -8,7 +8,6 @@ body {
   background-color: #030a46;
   background-position: cover;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
   
 }
@@ -55,10 +54,8 @@ body {
   margin: 0;
 }
 
-.menu-list-item:hover {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
-  padding: 15px;
-  border-radius: 15px;
  
 }
 
