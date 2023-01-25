@@ -208,13 +208,13 @@ function getMovies(url) {
 }
 // Show Movies Images & Info
 function showMovies(data) {
-  main.innerText = "";
+  main.innerHTML = "";
 
   data.forEach((movie) => {
     const { title, poster_path, vote_average, overview, id } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
-    movieEl.innerText = `
+    movieEl.innerHTML = `
              <img src="${
                poster_path ? IMG_URL + poster_path : "/assets/cinema.jpg"
              }" alt="${title}">
