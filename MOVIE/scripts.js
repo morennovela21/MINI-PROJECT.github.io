@@ -215,9 +215,8 @@ function showMovies(data) {
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
-             <img src="${
-               poster_path ? IMG_URL + poster_path : "/assets/cinema.jpg"
-             }" alt="${title}">
+             <img src="${poster_path ? IMG_URL + poster_path : "/assets/cinema.jpg"
+      }" alt="${title}">
             <div class="movie-info">
                 <h3>${title}</h3>
                 <span class="${getColor(vote_average)}">${vote_average}</span>
@@ -395,3 +394,11 @@ function pageCall(page) {
   }
 }
 
+// GOOGLE TRANSLATE
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: 'true',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}

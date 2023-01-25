@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  top: 0 !important;
+}
+
+/* FOR FEATURE MOVIE */
+.featured-content {
+  height: 90vh;
+  padding: 50px;
+  background-repeat: no-repeat;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-title {
+  width: 200px;
+}
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.featured-button {
+  background-color: #FF0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.featured-button:hover {
+  background: green;
+}
+
+/* FOR WATCH BUTTON IN FEATURE MOVIE */
+.watch-btn {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  border: 0.5px solid white;
+  font-size: 18px;
+  font-weight: bold;
+  background: white;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.watch-btn a {
+  text-decoration: none;
+  color: red;
+}
+
+.watch-btn:hover {
+  background-color: blue;
+  color: red;
+}
+
+
+.navbar a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+  color: red;
+}
+
+/*google translate Dropdown */
+
+#google_translate_element select {
+  background: #f6edfd;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px
+}
+
+/*google translate link | logo */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+/* google translate banner-frame */
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
