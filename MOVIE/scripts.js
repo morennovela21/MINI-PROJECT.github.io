@@ -107,8 +107,9 @@ setGenre();
 function setGenre() {
   tagsEl.innerHTML = "";
   genres.forEach((genre) => {
-    const t = document.createElement("div");
+    const t = document.createElement("a");
     t.classList.add("tag");
+    t.href = "#main";
     t.id = genre.id;
     t.innerText = genre.name;
     t.addEventListener("click", () => {
